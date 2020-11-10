@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #272343;
+}
+
+.container {
+  max-width: 98rem;
+  padding: 1.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.card {
+  background-color: #230444;
+  color: #fff;
+  padding: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title-large {
+  font-family: monospace;
+  font-size: 10rem;
+  letter-spacing: 0.5rem;
+  transform: translateX(7rem);
+  color: #595b83;
+  text-transform: uppercase;
+  transition: transform 5s;
+}
+
+.card-title-small {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.card-desc {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.card-cta {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+
+.card:hover .card-title-large {
+  transform: translateX(-150%);
+}
+
+.card.aesthete:hover {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card.sonorous:hover {
+  background: #159957; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #155799,
+    #159957
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #155799,
+    #159957
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card.ethereal:hover {
+  background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #dd2476,
+    #ff512f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #dd2476,
+    #ff512f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card.iridescent:hover {
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
